@@ -1,8 +1,6 @@
 package project1
 
-import (
-	"github.com/google/uuid"
-)
+import "github.com/google/uuid"
 
 type Product struct {
 	ID    string
@@ -10,7 +8,7 @@ type Product struct {
 	Price float64
 }
 
-func NewProduct(name string, price float64) *Product {
+func MyNewProduct(name string, price float64) *Product {
 	return &Product{
 		ID:    uuid.New().String(),
 		Name:  name,
